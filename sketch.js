@@ -91,6 +91,8 @@ function draw() {
   
   
   if (gameState===PLAY){
+    camera.position.x=trex.position.x;
+    camera.position.y=trex.position.y;
     score = score + Math.round(getFrameRate()/60);
     ground.velocityX = -(6 + 3*score/100);
     
